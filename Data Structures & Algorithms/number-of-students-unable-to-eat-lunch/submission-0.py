@@ -4,10 +4,9 @@ class Solution:
         cnt = Counter(students)
 
         for s in sandwiches:
-            if cnt[s] > 0:
+            if cnt[s] >0 :
                 res -= 1
                 cnt[s] -= 1
             else:
-                break
-
+                return res
         return res
